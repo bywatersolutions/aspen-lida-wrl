@@ -105,7 +105,7 @@ export const DrawerContent = () => {
           enabled: !!library.baseUrl,
           refetchInterval: 60 * 1000 * 5,
           refetchIntervalInBackground: true,
-		 refetchOnWindowFocus: 'always',
+          refetchOnWindowFocus: 'always',
           onSuccess: (data) => {
                updateCatalogStatus(data);
           },
@@ -113,9 +113,9 @@ export const DrawerContent = () => {
 
      useQuery(['user', library.baseUrl, language], () => reloadProfile(library.baseUrl), {
           initialData: user,
-          refetchInterval: 60 * 1000 * 15,
+          refetchInterval: 60 * 1000 * 5,
           refetchIntervalInBackground: true,
-		  refetchOnWindowFocus: 'always',
+          refetchOnWindowFocus: 'always',
           onSuccess: (data) => {
 			  const validProfile = data.success ?? true;
 			  if(validProfile) {
