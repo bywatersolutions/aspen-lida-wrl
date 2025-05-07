@@ -72,7 +72,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.74.5",
-    "react-native-barcode-aspen": "^0.0.6",
+    "react-native-barcode-expo": "^2.0.0",
     "react-native-barcode-mask": "^1.2.4",
     "react-native-base64": "^0.2.1",
     "react-native-check-version": "^1.1.1",
