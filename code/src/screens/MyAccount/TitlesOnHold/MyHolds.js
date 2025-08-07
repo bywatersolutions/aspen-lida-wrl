@@ -330,18 +330,18 @@ export const MyHolds = () => {
                                                   </SelectTrigger>
                                                   <SelectPortal>
                                                        <SelectBackdrop />
-                                                       <SelectContent>
+                                                       <SelectContent  bgColor={colorMode === 'light' ? theme['colors']['warmGray']['50'] : theme['colors']['coolGray']['700']}>
                                                             <SelectDragIndicatorWrapper>
                                                                  <SelectDragIndicator />
                                                             </SelectDragIndicatorWrapper>
-                                                       <SelectItem label={sortBy.title} value="sortTitle" key={0} />
-                                                       <SelectItem label={sortBy.author} value="author" key={1} />
-                                                       <SelectItem label={sortBy.format} value="format" key={2} />
-                                                       <SelectItem label={sortBy.status} value="status" key={3} />
-                                                       <SelectItem label={sortBy.date_placed} value="placed" key={4} />
-                                                       <SelectItem label={sortBy.position} value="position" key={5} />
-                                                       <SelectItem label={sortBy.pickup_location} value="location" key={6} />
-                                                       <SelectItem label={sortBy.library_account} value="libraryAccount" key={7} />
+                                                            <SelectItem label={sortBy.title} value="sortTitle" key={0} bgColor={userHoldPendingSortMethod == "sortTitle" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldPendingSortMethod == "sortTitle" ? theme['colors']['tertiary']['500-text'] : textColor } }} />
+                                                            <SelectItem label={sortBy.author} value="author" key={1} bgColor={userHoldPendingSortMethod == "author" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldPendingSortMethod == "author" ? theme['colors']['tertiary']['500-text'] : textColor } }} />
+                                                            <SelectItem label={sortBy.format} value="format" key={2} bgColor={userHoldPendingSortMethod == "format" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldPendingSortMethod == "format" ? theme['colors']['tertiary']['500-text'] : textColor } }} />
+                                                            <SelectItem label={sortBy.status} value="status" key={3} bgColor={userHoldPendingSortMethod == "status" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldPendingSortMethod == "status" ? theme['colors']['tertiary']['500-text'] : textColor } }} />
+                                                            <SelectItem label={sortBy.date_placed} value="placed" key={4} bgColor={userHoldPendingSortMethod == "placed" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldPendingSortMethod == "placed" ? theme['colors']['tertiary']['500-text'] : textColor } }} />
+                                                            <SelectItem label={sortBy.position} value="position" key={5} bgColor={userHoldPendingSortMethod == "position" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldPendingSortMethod == "position" ? theme['colors']['tertiary']['500-text'] : textColor } }} />
+                                                            <SelectItem label={sortBy.pickup_location} value="location" key={6} bgColor={userHoldPendingSortMethod == "location" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldPendingSortMethod == "location" ? theme['colors']['tertiary']['500-text'] : textColor } }} />
+                                                            <SelectItem label={sortBy.library_account} value="libraryAccount" key={7} bgColor={userHoldPendingSortMethod == "libraryAccount" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldPendingSortMethod == "libraryAccount" ? theme['colors']['tertiary']['500-text'] : textColor } }}/>
                                                        </SelectContent>
                                                   </SelectPortal>
                                              </Select>
@@ -376,18 +376,18 @@ export const MyHolds = () => {
                                              </SelectTrigger>
                                              <SelectPortal>
                                                   <SelectBackdrop />
-                                                  <SelectContent>
+                                                  <SelectContent bgColor={colorMode === 'light' ? theme['colors']['warmGray']['50'] : theme['colors']['coolGray']['700']}>
                                                        <SelectDragIndicatorWrapper>
                                                             <SelectDragIndicator />
                                                        </SelectDragIndicatorWrapper>
-                                                       <SelectItem label={sortBy.title} value="sortTitle" key={0} />
-                                                       <SelectItem label={sortBy.author} value="author" key={1} />
-                                                       <SelectItem label={sortBy.format} value="format" key={2} />
-                                                       <SelectItem label={sortBy.status} value="status" key={3} />
-                                                       <SelectItem label={sortBy.date_placed} value="placed" key={4} />
-                                                       <SelectItem label={sortBy.position} value="position" key={5} />
-                                                       <SelectItem label={sortBy.pickup_location} value="location" key={6} />
-                                                       <SelectItem label={sortBy.library_account} value="libraryAccount" key={7} />
+                                                       <SelectItem label={sortBy.title} value="sortTitle" key={0} bgColor={userHoldPendingSortMethod == "sortTitle" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldPendingSortMethod == "sortTitle" ? theme['colors']['tertiary']['500-text'] : textColor } }} />
+                                                       <SelectItem label={sortBy.author} value="author" key={1} bgColor={userHoldPendingSortMethod == "author" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldPendingSortMethod == "author" ? theme['colors']['tertiary']['500-text'] : textColor } }} />
+                                                       <SelectItem label={sortBy.format} value="format" key={2} bgColor={userHoldPendingSortMethod == "format" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldPendingSortMethod == "format" ? theme['colors']['tertiary']['500-text'] : textColor } }} />
+                                                       <SelectItem label={sortBy.status} value="status" key={3} bgColor={userHoldPendingSortMethod == "status" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldPendingSortMethod == "status" ? theme['colors']['tertiary']['500-text'] : textColor } }} />
+                                                       <SelectItem label={sortBy.date_placed} value="placed" key={4} bgColor={userHoldPendingSortMethod == "placed" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldPendingSortMethod == "placed" ? theme['colors']['tertiary']['500-text'] : textColor } }} />
+                                                       <SelectItem label={sortBy.position} value="position" key={5} bgColor={userHoldPendingSortMethod == "position" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldPendingSortMethod == "position" ? theme['colors']['tertiary']['500-text'] : textColor } }} />
+                                                       <SelectItem label={sortBy.pickup_location} value="location" key={6} bgColor={userHoldPendingSortMethod == "location" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldPendingSortMethod == "location" ? theme['colors']['tertiary']['500-text'] : textColor } }} />
+                                                       <SelectItem label={sortBy.library_account} value="libraryAccount" key={7} bgColor={userHoldPendingSortMethod == "libraryAccount" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldPendingSortMethod == "libraryAccount" ? theme['colors']['tertiary']['500-text'] : textColor } }}/>
                                                   </SelectContent>
                                              </SelectPortal>
                                         </Select>
@@ -466,17 +466,17 @@ export const MyHolds = () => {
                                              </SelectTrigger>
                                              <SelectPortal>
                                                   <SelectBackdrop />
-                                                  <SelectContent>
+                                                  <SelectContent  bgColor={colorMode === 'light' ? theme['colors']['warmGray']['50'] : theme['colors']['coolGray']['700']}>
                                                        <SelectDragIndicatorWrapper>
                                                             <SelectDragIndicator />
                                                        </SelectDragIndicatorWrapper>
-                                                  <SelectItem label={sortBy.title} value="sortTitle" key={0} />
-                                                  <SelectItem label={sortBy.author} value="author" key={1} />
-                                                  <SelectItem label={sortBy.format} value="format" key={2} />
-                                                  <SelectItem label={sortBy.expiration} value="expire" key={3} />
-                                                  <SelectItem label={sortBy.date_placed} value="placed" key={4} />
-                                                  <SelectItem label={sortBy.pickup_location} value="location" key={5} />
-                                                  <SelectItem label={sortBy.library_account} value="libraryAccount" key={6} />
+                                                  <SelectItem label={sortBy.title} value="sortTitle" key={0} bgColor={userHoldReadySortMethod == "sortTitle" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldReadySortMethod == "sortTitle" ? theme['colors']['tertiary']['500-text'] : textColor } }} />
+                                                  <SelectItem label={sortBy.author} value="author" key={1} bgColor={userHoldReadySortMethod == "author" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldReadySortMethod == "author" ? theme['colors']['tertiary']['500-text'] : textColor } }}/>
+                                                  <SelectItem label={sortBy.format} value="format" key={2}bgColor={userHoldReadySortMethod == "format" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldReadySortMethod == "format" ? theme['colors']['tertiary']['500-text'] : textColor } }} />
+                                                  <SelectItem label={sortBy.expiration} value="expire" key={3} bgColor={userHoldReadySortMethod == "expire" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldReadySortMethod == "expire" ? theme['colors']['tertiary']['500-text'] : textColor } }}/>
+                                                  <SelectItem label={sortBy.date_placed} value="placed" key={4} bgColor={userHoldReadySortMethod == "placed" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldReadySortMethod == "placed" ? theme['colors']['tertiary']['500-text'] : textColor } }}/>
+                                                  <SelectItem label={sortBy.pickup_location} value="location" key={5} bgColor={userHoldReadySortMethod == "location" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldReadySortMethod == "location" ? theme['colors']['tertiary']['500-text'] : textColor } }}/>
+                                                  <SelectItem label={sortBy.library_account} value="libraryAccount" key={6} bgColor={userHoldReadySortMethod == "libraryAccount" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: userHoldReadySortMethod == "libraryAccount" ? theme['colors']['tertiary']['500-text'] : textColor } }} />
                                                   </SelectContent>
                                              </SelectPortal>
                                         </Select>
@@ -540,16 +540,16 @@ export const MyHolds = () => {
                                         </SelectTrigger>
                                         <SelectPortal>
                                              <SelectBackdrop />
-                                             <SelectContent>
+                                             <SelectContent  bgColor={colorMode === 'light' ? theme['colors']['warmGray']['50'] : theme['colors']['coolGray']['700']}>
                                                   <SelectDragIndicatorWrapper>
                                                        <SelectDragIndicator />
                                                   </SelectDragIndicatorWrapper>
-                                                  <SelectItem label={getTermFromDictionary(language, 'filter_by_all') + ' (' + (user.numHolds ?? 0) + ')'} value="all" key={0} />
-                                                  <SelectItem label={getTermFromDictionary(language, 'filter_by_ils') + ' (' + (user.numHoldsRequestedIls ?? 0) + ')'} value="ils" key={1} />
-                                                  {user.isValidForOverdrive ? <SelectItem label={filterByLibby + ' (' + (user.numHoldsOverDrive ?? 0) + ')'} value="overdrive" key={2} /> : null}
-                                                  {user.isValidForCloudLibrary ? <SelectItem label={getTermFromDictionary(language, 'filter_by_cloud_library') + ' (' + (user.numHolds_cloudLibrary ?? 0) + ')'} value="cloud_library" key={3} /> : null}
-                                                  {user.isValidForAxis360 ? <SelectItem label={getTermFromDictionary(language, 'filter_by_boundless') + ' (' + (user.numHolds_axis360 ?? 0) + ')'} value="axis360" key={4} /> : null}
-                                                  {user.isValidForPalaceProject ? <SelectItem label={getTermFromDictionary(language, 'filter_by_palace_project') + ' (' + (user.numHolds_PalaceProject ?? 0) + ')'} value="palace_project" key={5} /> : null}
+                                                  <SelectItem label={getTermFromDictionary(language, 'filter_by_all') + ' (' + (user.numHolds ?? 0) + ')'} value="all" key={0}  bgColor={holdSource == "all" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: holdSource == "all" ? theme['colors']['tertiary']['500-text'] : textColor } }}/>
+                                                  <SelectItem label={getTermFromDictionary(language, 'filter_by_ils') + ' (' + (user.numHoldsRequestedIls ?? 0) + ')'} value="ils" key={1}  bgColor={holdSource == "ils" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: holdSource == "ils" ? theme['colors']['tertiary']['500-text'] : textColor } }}/>
+                                                  {user.isValidForOverdrive ? <SelectItem label={filterByLibby + ' (' + (user.numHoldsOverDrive ?? 0) + ')'} value="overdrive" key={2}  bgColor={holdSource == "overdrive" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: holdSource == "overdrive" ? theme['colors']['tertiary']['500-text'] : textColor } }} /> : null}
+                                                  {user.isValidForCloudLibrary ? <SelectItem label={getTermFromDictionary(language, 'filter_by_cloud_library') + ' (' + (user.numHolds_cloudLibrary ?? 0) + ')'} value="cloud_library" key={3}  bgColor={holdSource == "cloud_library" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: holdSource == "cloud_library" ? theme['colors']['tertiary']['500-text'] : textColor } }}/> : null}
+                                                  {user.isValidForAxis360 ? <SelectItem label={getTermFromDictionary(language, 'filter_by_boundless') + ' (' + (user.numHolds_axis360 ?? 0) + ')'} value="axis360" key={4}  bgColor={holdSource == "axis360" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: holdSource == "axis360" ? theme['colors']['tertiary']['500-text'] : textColor } }}/> : null}
+                                                  {user.isValidForPalaceProject ? <SelectItem label={getTermFromDictionary(language, 'filter_by_palace_project') + ' (' + (user.numHolds_PalaceProject ?? 0) + ')'} value="palace_project" key={5}  bgColor={holdSource == "palace_project" ? theme['colors']['tertiary']['300'] : ''} sx={{ _text: { color: holdSource == "palace_project" ? theme['colors']['tertiary']['500-text'] : textColor } }}/> : null}
                                              </SelectContent>
                                         </SelectPortal>
                                    </Select>
