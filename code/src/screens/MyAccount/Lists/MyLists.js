@@ -323,7 +323,7 @@ export const MyLists = () => {
                                              </ScrollView>
                                         )}
                                         </Box>
-                                        <FlatList contentContainerStyle={Platform.OS === 'ios' ? { paddingBottom: 200 } : {}} mt="$2" data={currentListGroupData.listsInGroup} renderItem={({ item }) => renderList(item, library.baseUrl)} keyExtractor={(item, index) => index.toString()} ListEmptyComponent={listEmptyComponent} />
+                                        <FlatList contentContainerStyle={{ paddingBottom: 200 }} mt="$2" data={currentListGroupData.listsInGroup} renderItem={({ item }) => renderList(item, library.baseUrl)} keyExtractor={(item, index) => index.toString()} ListEmptyComponent={listEmptyComponent} />
                                    </Box>
                               ) : null}
                          </Box>
