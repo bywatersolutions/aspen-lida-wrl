@@ -178,7 +178,7 @@ const EditList = (props) => {
                                              {listGroupId != -1 ? (
                                                        _.map(Object.values(listGroups.groups), function (group, selectedIndex, array) {
                                                             if (group.id === listGroupId) {
-                                                                 return <SelectInput placeholder={group.title} value={group.id} color={textColor} />;
+                                                                 return <SelectInput value={group.title} color={textColor} />;
                                                             }
                                                        })
                                                   ) :
