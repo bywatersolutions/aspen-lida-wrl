@@ -197,8 +197,8 @@ export const DiscoverHomeScreen = () => {
                               </InputSlot>
                          </Input>
                     </FormControl>
-                    {homeScreenLinks > 0 ? (
-                         <HomeScreenLinkGrid />
+                    {homeScreenLinks && homeScreenLinks.length > 0 ? (
+                         <HomeScreenLinkGrid links={homeScreenLinks} />
                     ) : null}
                     {category.map((item, index) => {
                          return <DisplayBrowseCategory category={item} />;
