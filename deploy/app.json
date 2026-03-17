@@ -1,0 +1,15 @@
+{
+  "name": "Williamsburg Regional Library",
+  "slug": "wrl",
+  "easId": "db42d4b3-8749-4d7f-813c-091fb74af745",
+  "reverseDns": "org.aspendiscovery.wrl",
+  "discoveryUrl": "https://wrl.aspendiscovery.org/",
+  "greenhouseUrl": "https://wrl.aspendiscovery.org/",
+  "libraryId": "1",
+  "themeId": "1",
+  "background": "#ffffff",
+  "sentryProject": "aspen-lida-wrl",
+  "sentryDsn": "https://b5da872b2772c588ff0296536f00ec91@o994439.ingest.us.sentry.io/4509985066385408",
+  "ascAppId": "6752622504",
+  "logLevel": "0"
+}
